@@ -1,0 +1,28 @@
+li.nav-item {
+  position: relative;
+}
+
+ul.dropdowm {
+  position: absolute;
+  box-shadow: 0 0 10px 0px #00000029;
+  padding: 0;
+  transition:0.5s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(66px);
+}
+ul.dropdowm li {
+  padding: 0;
+  /* position: absolute; */
+  width: 256px;
+  list-style: none;
+  background: #fff;
+  /* box-shadow: 0 0 10px 0px #00000042; */
+  padding: 12px;
+}
+
+li.nav-item:hover ul.dropdowm{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
